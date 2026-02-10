@@ -4,6 +4,6 @@ Console.Write("Enter amount in USD: ");
 double UsdAmount = double.Parse(Console.ReadLine()!);
 Console.Write("Enter Exchange rate from USD to Php: ");
 double ExchangeRate = double.Parse(Console.ReadLine()!);
-double PhpAmount = UsdAmount / ExchangeRate;
+double PhpAmount = UsdAmount * ExchangeRate;
 
 Console.Write($"Amount in Php: {PhpAmount:F2}");
